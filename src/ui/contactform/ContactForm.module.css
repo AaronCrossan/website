@@ -1,0 +1,101 @@
+.form {
+  width: 450px;
+  height: 80vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(10, 10, 10);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.form h1 {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 1px solid #fc2d5a;
+  margin-bottom: 2rem;
+}
+
+.form p {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.form form input,
+.form form textarea {
+  width: 90%;
+  height: 4rem;
+  color: white;
+}
+
+.form form p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(200, 200, 200);
+}
+
+.form form input:not(:last-child),
+textarea {
+  background-color: transparent;
+  border: 2px solid rgb(30, 30, 30);
+  padding: 10px;
+  margin-bottom: 3rem;
+  transition: all 0.3s;
+}
+
+.form form textarea {
+  max-width: 90%;
+  min-width: 90%;
+  max-height: 250px;
+  min-height: 100px;
+}
+
+.form form input:not(:last-child):focus-visible,
+.form form textarea:focus-visible {
+  border: none;
+  outline: solid 2px #fc2d5a;
+}
+
+.form form input:not(:last-child):active {
+  border: 2px solid #fc2d5a;
+  transition: all 0.3s;
+}
+
+.form form input:last-child {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  transition: all 0.3s;
+}
+
+.form form input:last-child:not(:disabled):hover {
+  background-color: #fc2d5a;
+  transition: all 0.3s;
+}
+
+@media (max-width: 430px) {
+  .form {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 2560px) {
+  .form {
+    width: 750px;
+  }
+}
